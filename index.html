@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Info</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 40px;
+        text-align: center;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        color: darkolivegreen;
+      }
+
+      .user-info {
+        margin-top: 20px;
+        display: none;
+      }
+      .user-info img {
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      #profile {
+        color: blue;
+      }
+
+      .pp {
+        color: darkolivegreen;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      #username {
+        padding: 10px;
+        font-size: 18px;
+        width: 400px;
+        border-radius: 20px;
+        color: darkolivegreen;
+      }
+
+      #search {
+        padding: 10px;
+        font-size: 18px;
+        width: 100px;
+        border-radius: 15px;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+      }
+
+      #search:hover {
+        background-color: darkolivegreen;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GitHub User Search</h1>
+    <input type="text" id="username" placeholder="GitHub username kiriting" />
+    <button id="search">Search</button>
+
+    <div class="user-info" id="userInfo">
+      <img id="avatar" src="" alt="Avatar" width="100" />
+      <p class="pp">name</p>
+      <h2 id="name"></h2>
+      <p class="pp">login</p>
+      <h2 id="login"></h2>
+      <p class="pp">Bio</p>
+      <p id="bio"></p>
+      <a id="profile" href="#" target="_blank"> Profileni ko'rish </a>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
